@@ -57,7 +57,7 @@ ROOT_URLCONF = 'swe1.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -69,6 +69,9 @@ TEMPLATES = [
         },
     },
 ]
+
+
+print(TEMPLATES[0])
 
 WSGI_APPLICATION = 'swe1.wsgi.application'
 
